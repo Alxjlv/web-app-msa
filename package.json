@@ -15,8 +15,8 @@
     "webpack-dev-server": "^3.7.2"
   },
   "scripts": {
-    "start": "react-scripts-ts run start",
-    "build": "react-scripts-ts run build",
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject"
   },
