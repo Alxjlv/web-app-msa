@@ -1,7 +1,7 @@
 import React from 'react';
-import DropArea from './Components/DropArea/DropArea'
-import Header from './Components/Header/Header'
-import Result from './Components/Result/Result'
+import DropArea from './components/DropArea/DropArea'
+import Header from './components/Header/Header'
+import Result from './components/Result/Result'
 
 interface IState {
   filelength:number
