@@ -3,11 +3,12 @@ import ReactDropzone from 'react-dropzone'
 import './DropArea.css'
 
 interface IState {
-    dropzone: any,
+    dropzone: any
     imageFiles: any[]
+    
 }
 
-interface IProps {
+interface IProps{
     setResults:any
 }
 
@@ -16,7 +17,7 @@ export default class DropArea extends React.Component<IProps, IState>{
         super(props)
         this.state = {
             dropzone: this.onDrop.bind(this),
-            imageFiles: []
+            imageFiles: [],
         }
     }
 
@@ -39,6 +40,7 @@ export default class DropArea extends React.Component<IProps, IState>{
             this.props.setResults("Sorry we had trouble loading that file please use a downloaded image file",0);
         }
     }
+
     public upload(base64String: any) {
         const base64 = require('base64-js');
         const byteArray = base64.toByteArray(base64String);
@@ -83,5 +85,4 @@ export default class DropArea extends React.Component<IProps, IState>{
             </div>
         )
     }
-
   }

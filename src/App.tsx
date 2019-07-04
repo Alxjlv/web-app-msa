@@ -1,14 +1,14 @@
-import * as React from 'react';
+import React from 'react';
 import DropArea from './Components/DropArea/DropArea'
 import Header from './Components/Header/Header'
 import Result from './Components/Result/Result'
 
 interface IState {
-  result:string
   filelength:number
+  result:string
 }
 
-class App extends React.Component<{},IState> {
+class App extends React.Component<{},IState>{
   public constructor(props:any){
     super(props)
     this.state = {
@@ -25,10 +25,10 @@ class App extends React.Component<{},IState> {
       </div>
     );
   }
-  public resultstate = (resultString:string,filelen:any) => {
-    this.setState({result:resultString,filelength:filelen})
+    public resultstate = (resultString:string,filelen:any) => {
+      this.setState({result:resultString,filelength:filelen})
+    }
+
   }
-
-}
-
-export default App;
+  
+  export default App;
